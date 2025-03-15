@@ -77,14 +77,15 @@ void print_word_ladder(const vector<string>& ladder)
         cout << "No word ladder found." << endl;
         return;
     }
-    for (const string& word : ladder) 
+
+    cout << "Word ladder found: ";
+    for (const auto &word : ladder) 
     {
-        cout << word << " -> ";
+        cout << word << " ";
     }
 
-    cout << "END" << endl;
+    cout << "\n";
 }
-
 
 // Edit distance allows inserting, deleting, or replacing a character
 bool edit_distance_within(const std::string& str1, const std::string& str2, int d) 
